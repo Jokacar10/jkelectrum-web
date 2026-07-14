@@ -169,7 +169,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
 
 <h3>How to verify GPG signatures</h3>
 
-<div class="downloads" style="padding:5px">
+<div class="downloads">
     <p>
         GPG signatures are a proof that distributed files have been signed
         by the owner of the signing key. For example, if this website was
@@ -196,7 +196,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
 
 <h3>Notes for Windows users</h3>
 
-<div class="downloads" style="padding:5px">
+<div class="downloads">
     <p>
         Electrum binaries are often flagged by various anti-virus
         software. There is nothing we can do about it, so please stop

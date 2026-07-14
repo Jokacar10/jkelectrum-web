@@ -84,6 +84,7 @@
 </div>
 <div id="content">
     <div class="wrapper">
+        <h1 class="visually-hidden">Electrum Bitcoin Wallet</h1>
         <p>Warning: Do not download Electrum from a source other than electrum.org. Verify GPG signatures.
         </p>
 

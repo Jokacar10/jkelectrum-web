@@ -1,10 +1,15 @@
 body {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     font-size: 100%;
     background: #222222;
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-    line-height:1.5;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+code, pre {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: 0.9em;
 }
 
 img {
@@ -17,8 +22,11 @@ a img {
 }
 a {
     text-decoration: none;
-    outline: 0;
-    color: #0099ff;
+    color: #33aaff;
+}
+a:focus-visible {
+    outline: 2px solid #77ccff;
+    outline-offset: 2px;
 }
 a:focus {
     color: #77ccff;
@@ -31,13 +39,11 @@ a:active {
 }
 
 .downloads a {
-    color:#112277;
+    color: #33aaff;
 }
-.downloads a:focus {
-    color: #0099ff;
-}
+.downloads a:focus,
 .downloads a:hover {
-    color: #0099ff;
+    color: #77ccff;
 }
 
 
@@ -64,17 +70,25 @@ a:active {
     clear: both;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
 
 /** Header
  */
-#header { 
+#header {
     height: 100px;
-    background: #222222;
-    color:#ffffff;
-    background: -webkit-linear-gradient(#555555, #000000, #000000); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#555555, #000000, #000000); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#555555, #000000, #000000); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#555555, #222222, #222222);
+    background: #1a1a1a;
+    color: #ffffff;
+    border-bottom: 1px solid #333333;
 }
 
 
@@ -90,12 +104,11 @@ a:active {
 }
 
 #electrum_text {
-    width:300px;
-    height:45px;
-    display:block;
-    background:url(../logo/electrum_text.png) no-repeat 0 0;
-    background-image: -webkit-image-set( url(../logo/electrum_text.png) 1x, url(../logo/electrum_text.png) 2x);
-    background-size:300px 42px;
+    width: 300px;
+    height: 42px;
+    display: block;
+    background: url(../logo/electrum_text_tron_color.svg) no-repeat 0 0;
+    background-size: 300px 38px;
 }
 
 #electrum_text span, #electrum_logo img { position:absolute; top:100%; left:-99999px; }
@@ -108,13 +121,14 @@ a:active {
 }
 	
 #electrum_logo {
-    width:70px;
-    height:66px;
-    display:block;
-    float:right;
-    background:url(../logo/electrum_logo.png) no-repeat 0 0;
-    background-image: -webkit-image-set( url(../logo/electrum_logo.png) 1x, url(../logo/electrum_logo.png) 2x);
-    background-size:70px 66px;
+    width: 70px;
+    height: 66px;
+    display: block;
+    float: right;
+    /* the SVG has ~5.5% blank margin around the glyph; oversize and shift up
+       so the glyph top stays flush with the wordmark */
+    background: url(../logo/electrum_logo_color.svg) no-repeat 50% -4px;
+    background-size: 71px 71px;
 }
 
 
@@ -154,15 +168,15 @@ ul.navigation li a {
 
 h2 {
     font-size: 1.5em;
-    line-height: 1;
+    line-height: 1.25;
     margin-bottom: 1.00em;
-    font-weight:normal;
+    font-weight: 600;
 }
 h3 {
     font-size: 1.2em;
-    line-height: 1;
+    line-height: 1.25;
     margin-bottom: 1.00em;
-    font-weight:normal;
+    font-weight: 600;
 }
 
 #footer {
@@ -175,8 +189,7 @@ h3 {
 #footer a,
 #header a {
     text-decoration: none;
-    color:#ffffff;
-    visited-color:#cccccc;
+    color: #ffffff;
 }
 
 #footer a:hover,
@@ -232,10 +245,10 @@ hr {
     position: absolute;
     margin-left: 50px;
     margin-top: 50px;
-    padding: 10px 20px;
+    padding: 12px 20px;
     color: #f8f8f8;
-    background-color: #101010;
-    opacity: 0.8;
+    background-color: rgba(10, 10, 10, 0.82);
+    border-radius: 6px;
 }
 
 .slideshow .caption h3 {
@@ -265,17 +278,19 @@ hr {
  */
 
 .button {
-    font-size:1.5em;
-    padding: 10px 30px;
-    color:#fff;
-    background-color:#3468bb;
-    font-weight:300;
-    text-decoration:none;
-    border-radius:6px;
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 12px 32px;
+    color: #fff;
+    background-color: #3468bb;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color .15s ease;
 }
-.button:visited { color:#fff; }
-.button:hover, .button:active, .button:focus { color:#fff; text-decoration:underline; }
-.button:active { position:relative; top:1px; }
+.button:visited { color: #fff; }
+.button:hover, .button:active, .button:focus { color: #fff; background-color: #3d78d6; }
+.button:active { position: relative; top: 1px; }
 	
 
 
@@ -345,46 +360,49 @@ h2.icon-plugins {
 
 /** Downloads
  */
-.downloads{
-    color:#000000;
-    background-color:#cccccc;
+.downloads {
+    color: #dddddd;
+    background-color: #0d2836;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
 }
 
+div.downloads {
+    padding: 12px 16px;
+}
 
 table {
-    border-collapse: collapse;
+    border-collapse: separate;
     border-spacing: 0;
     margin-bottom: 1.4em;
     width: 100%;
 }
 
-
-table {
-    border: 0px solid #888888;
-    border-collapse: separate;
+table.downloads {
+    overflow: hidden;
 }
+
+table.downloads img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
 td {
-    border-top: 1px solid #888888;
-    border-left: 1px solid #888888;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    vertical-align: middle;
+}
+
+table.downloads tr:first-child td {
+    border-top: 0;
 }
 
 th, td, caption {
-    padding: 4px 10px 4px 5px;
+    padding: 10px 14px;
 }
 
 
 .clear {
     clear: left;
-}
-
-/** IE fixes
- */
-body {
-	text-align: center;
-}
-
-.wrapper {
-	text-align: left;
 }
 
 /** Navigation between panels --> START
@@ -426,8 +444,8 @@ body {
     }
     #electrum_text {
         width: 200px;
-        height: 30px;
-        background-size: 200px 28px;
+        height: 28px;
+        background-size: 200px 25px;
     }
     #header-right {
         float: none;
