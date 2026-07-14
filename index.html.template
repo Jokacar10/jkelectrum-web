@@ -1,28 +1,48 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="utf-8"/>
     <title>Electrum Bitcoin Wallet</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="robots" content="index, follow"/>
-    <meta name="description" content="Electrum Bitcoin Wallet."/>
-    <meta name="x:site" content="@ElectrumWallet"/>
+    <meta name="description" content="Electrum is one of the most popular Bitcoin wallets, in continuous development since 2011. Fast, secure and open source, for Windows, macOS, Linux and Android."/>
+    <link rel="canonical" href="https://electrum.org/"/>
+
+    <meta property="og:site_name" content="Electrum"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://electrum.org/"/>
+    <meta property="og:title" content="Electrum Bitcoin Wallet"/>
+    <meta property="og:description" content="Electrum is one of the most popular Bitcoin wallets, in continuous development since 2011. Fast, secure and open source, for Windows, macOS, Linux and Android."/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@ElectrumWallet"/>
 
     <link rel="icon" href="images/favicon.png" type="image/png"/>
     <link rel="shortcut icon" href="favicon.ico"/>
-    <link rel="stylesheet" href="css/electrum.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
-    <link rel="stylesheet" href="css/sprites.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+    <link rel="stylesheet" href="css/electrum.css"/>
+    <link rel="stylesheet" href="css/sprites.css"/>
 
-    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.cycle.lite.js"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.cycle.lite.js"></script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Electrum",
+        "url": "https://electrum.org/",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Windows, macOS, Linux, Android",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+        "license": "https://github.com/spesmilo/electrum/blob/master/LICENCE",
+        "author": {"@type": "Organization", "name": "Electrum Technologies GmbH"}
+    }
+    </script>
 </head>
 <body>
 <div id="header">
     <div class="wrapper">
         <div id="logo">
             <a href="https://electrum.org/">
-                <div id="electrum_logo"><img src="logo/electrum_logo.png" alt="Electrum" border="none" width="70"
-                                             align="top"/></div>
+                <div id="electrum_logo"><img src="logo/electrum_logo.png" alt="Electrum" width="70"/></div>
                 <div id="electrum_text"></div>
                 <span id="logo_subtitle">Bitcoin Wallet</span>
             </a>
@@ -268,7 +288,8 @@
         </div>
 
         <div class="page" id="impressum">
-            <h4>Impressum</h4> This website is hosted by
+            <h4>Impressum</h4>
+            <p>This website is hosted by
             Electrum Technologies GmbH<br/> Electrum Technologies was founded by Thomas
             Voegtlin in 2013.<br/> Its mission is to develop,
             package and distribute Electrum software, and to
@@ -400,19 +421,19 @@
         <div class="col1">
             <p><a href="#impressum"
                   onclick="location.hash='#impressum'; window.scrollTo(0,0); return false;">Impressum</a></p>
-            <p><a href="#disclaimer" onclick="location.hash='#disclaimer'; window.scrollTo(0,0); return false;">Disclaimer</a>
-            <p>
+            <p><a href="#disclaimer" onclick="location.hash='#disclaimer'; window.scrollTo(0,0); return false;">Disclaimer</a></p>
+            <p><a href="#privacy" onclick="location.hash='#privacy'; window.scrollTo(0,0); return false;">Privacy Policy</a></p>
         </div>
         <div class="col2">
             <p>Released under the <a href="https://github.com/spesmilo/electrum/blob/master/LICENCE">MIT Licence</a></p>
-            <p><a href="https://github.com/spesmilo/electrum-web">Website source<a/></p>
+            <p><a href="https://github.com/spesmilo/electrum-web">Website source</a></p>
         </div>
     </div>
     <div class="clear"></div>
 </div>
 
 
-<script type="text/javascript" charset="utf-8">
+<script>
     $(document).ready(function(){
         $.getJSON('projects.json', function(data) {
 
