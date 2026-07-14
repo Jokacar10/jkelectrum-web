@@ -12,15 +12,9 @@
     <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="stylesheet" href="css/electrum.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
     <link rel="stylesheet" href="css/sprites.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
-    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
 
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
-    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
     <script type="text/javascript" src="js/jquery.cycle.lite.js"></script>
-    <script type="text/javascript" src="js/jquery.client.js"></script>
-    <script type="text/javascript" src="js/jquery.socialbutton-1.8.0.js"></script>
-    <script type="text/javascript" src="js/qrcode.js"></script>
 </head>
 <body>
 <div id="header">
@@ -435,17 +429,10 @@
             '<p>', element['description'].join(''), '</p>',
             text_more,
             '</div>',
-        <!-- '<a href="', element['media'], '" rel="prettyPhoto[featured]">', -->
             '<img src="slides/', element['id'], '.png" alt="', element['title'], '"/>'
-        <!-- '</a>' -->
         ].join('');
         var item = $('<div></div>').html(html);
         $('#slides').append(item);
-        });
-
-        $("a[rel^='prettyPhoto']").prettyPhoto({
-        overlay_gallery: false,
-        deeplinking: false
         });
 
         $(".slideshow").cycle({
