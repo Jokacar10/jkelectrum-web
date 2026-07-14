@@ -7,6 +7,11 @@ body {
     line-height:1.5;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 a img {
     border: none;
 }
@@ -50,7 +55,8 @@ a:active {
 
 .wrapper {
     margin: 0 auto;
-    width: 940px;
+    max-width: 940px;
+    padding: 0 16px;
     clear: left;
 }
 
@@ -77,6 +83,10 @@ a:active {
     float: left;
     width: 380px;
     line-height:1.5;
+}
+
+#header-right {
+    float: right;
 }
 
 #electrum_text {
@@ -179,11 +189,11 @@ h3 {
 }
 
 #footer .col1 {
-    width: 470px;
+    width: 50%;
     float: left;
 }
 #footer .col2 {
-    width: 470px;
+    width: 50%;
     text-align: right;
     float: left;
 }
@@ -198,11 +208,23 @@ hr {
  */
 
 .slideshow {
-		width: 940px;
-		height: 400px;
-		overflow: hidden;
-		margin-top: 47px;
-		background-color: black;
+    position: relative;
+    width: auto;
+    max-width: 940px;
+    aspect-ratio: 940 / 400;
+    overflow: hidden;
+    margin-top: 47px;
+    background-color: black;
+}
+
+.slideshow > div {
+    width: 100%;
+}
+
+.slideshow img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -311,10 +333,10 @@ h2.icon-plugins {
 
 
 .feature-item {
-    width: 300px;
+    width: 32%;
     line-height: 150%;
     float: left;
-    margin-right: 20px;
+    margin-right: 2%;
 }
 
 .feature-item.last {
@@ -389,5 +411,79 @@ body {
 }
 /** Navigation between panels <-- END
  */
+
+
+/** Responsive adjustments for small screens
+ */
+@media (max-width: 760px) {
+    #header {
+        height: auto;
+        padding: 8px 0 12px;
+    }
+    #logo {
+        float: none;
+        width: auto;
+    }
+    #electrum_text {
+        width: 200px;
+        height: 30px;
+        background-size: 200px 28px;
+    }
+    #header-right {
+        float: none;
+    }
+    #social-icons {
+        float: none;
+        margin: 8px 0 0;
+    }
+    #menu {
+        float: none;
+    }
+    ul.navigation {
+        float: none;
+        margin: 6px 0 0;
+        padding-left: 0;
+    }
+    ul.navigation li {
+        float: none;
+        display: inline-block;
+    }
+    ul.navigation li a {
+        float: none;
+        margin: 0 16px 0 0;
+    }
+    .slideshow .caption {
+        margin: 12px;
+        padding: 6px 12px;
+    }
+    .slideshow .caption h3 {
+        font-size: 16px;
+    }
+    .slideshow .caption p,
+    .slideshow .caption a {
+        display: none;
+    }
+    .feature-item {
+        width: 100%;
+        float: none;
+        margin: 0 0 8px;
+    }
+    #footer .col1,
+    #footer .col2 {
+        width: 100%;
+        float: none;
+    }
+    #footer .col2 {
+        text-align: left;
+    }
+    table.downloads {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    #download code {
+        overflow-wrap: anywhere;
+    }
+}
 
 
