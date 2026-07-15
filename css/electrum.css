@@ -187,9 +187,23 @@ ul.navigation li a {
 
 /** Social toolbar
  */
-#social-icons { 
+#social-icons {
     margin-top: 10px;
     float:right;
+}
+
+#social-icons a {
+    display: inline-block;
+    line-height: 0;
+}
+
+#social-icons a + a {
+    margin-left: 6px;
+}
+
+#social-icons a:hover img,
+#social-icons a:focus img {
+    opacity: 0.85;
 }
 
 h2 {

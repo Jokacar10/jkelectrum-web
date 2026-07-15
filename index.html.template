@@ -26,7 +26,6 @@
     <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
     <link rel="stylesheet" href="css/electrum.css"/>
-    <link rel="stylesheet" href="css/sprites.css"/>
 
     <script type="application/ld+json">
     {
@@ -54,8 +53,8 @@
         </div>
         <div id="header-right">
             <div id="social-icons">
-                <a href="https://github.com/spesmilo/electrum" class="icon-github"></a>
-                <a href="https://x.com/ElectrumWallet" class="icon-twitter"></a>
+                <a href="https://github.com/spesmilo/electrum"><img src="icons/github.svg" width="24" height="24" alt="Electrum on GitHub"/></a>
+                <a href="https://x.com/ElectrumWallet"><img src="icons/x.svg" width="24" height="24" alt="Electrum on X"/></a>
             </div>
             <div class="clear"></div>
             <div id="menu">
@@ -108,7 +107,7 @@
             <h4>Forums and social media</h4>
             <ul>
                 <li>Official announcements are made
-                  on <a href="https://x.com/ElectrumWallet">Twitter</a>
+                  on <a href="https://x.com/ElectrumWallet">X (Twitter)</a>
                   and <a href="nostr:npub1zqnl6k7rkhjsexqq6j9u3t8mc2gd3xu9037wz4tj54cy33xq2k8qpqv2pm">nostr</a>.</li>
                 <li>You can ask questions
                 on <a href="https://bitcointalk.org/index.php?board=98.0">bitcointalk.org</a>
