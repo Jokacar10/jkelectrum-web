@@ -55,6 +55,7 @@
             <div id="social-icons">
                 <a href="https://github.com/spesmilo/electrum"><img src="icons/github.svg" width="24" height="24" alt="Electrum on GitHub"/></a>
                 <a href="https://x.com/ElectrumWallet"><img src="icons/x.svg" width="24" height="24" alt="Electrum on X"/></a>
+                <a href="https://njump.me/nprofile1qqspqflat0pmtegvnqqdfz7g4nau9yxcnwzhcl8p24e22uzgcnq9trsprpmhxue69uhhyetvv9ujuumwdae8gtnnda3kjctvqy88wue69uhkztnwdaejumr0dsqs7amnwvaz7tmp9ehx7uewd3hkcqgdwaehxw309ahx7uewd3hkcqg6waehxw309aex2mrp0yhxwet5v9kxy7fwvdhk6tmkxyq3yamnwvaz7tm0venxx6rpd9hzuur4vgvw08lt"><img src="icons/nostr.svg" width="24" height="24" alt="Electrum on Nostr"/></a>
             </div>
             <div class="clear"></div>
             <div id="menu">
