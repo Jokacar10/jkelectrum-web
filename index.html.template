@@ -79,11 +79,15 @@
 
     </div>
 </div>
+<div id="site-notice">
+    <div class="wrapper">
+        <p>Warning: Do not download Electrum from a source other than electrum.org.
+            Verify <a href="https://docs.electrum.org/en/latest/gpg-check.html">GPG signatures</a>.</p>
+    </div>
+</div>
 <div id="content">
     <div class="wrapper">
         <h1 class="visually-hidden">Electrum Bitcoin Wallet</h1>
-        <p>Warning: Do not download Electrum from a source other than electrum.org. Verify GPG signatures.
-        </p>
 
         <!-- "download page" starts -->
         <div class="page" id="download">

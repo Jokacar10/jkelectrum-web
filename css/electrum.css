@@ -139,6 +139,32 @@ a:active {
 }
 
 
+/** Site notice
+ */
+#site-notice {
+    background: #2b2314;
+    border-bottom: 1px solid rgba(255, 201, 102, 0.25);
+    color: #ffc966;
+    font-size: 90%;
+    text-align: center;
+}
+
+#site-notice p {
+    margin: 0;
+    padding: 9px 0;
+}
+
+#site-notice a {
+    color: #ffc966;
+    text-decoration: underline;
+}
+
+#site-notice a:hover,
+#site-notice a:focus {
+    color: #ffe0a3;
+}
+
+
 
 ul.navigation {
     float: right;
