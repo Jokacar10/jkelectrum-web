@@ -19,11 +19,13 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
 <table class="downloads">
     <tr>
         <td>
-            <img src="icons/tar-gz.png" width=32/>Python
+            <img src="icons/python.svg" width="32" height="32" alt=""/>Python
             <span style="font-size:80%">(3.10 and higher)</span>
         </td>
         <td>
-            <a href="##link_tgz##">Electrum-##VERSION##.tar.gz</a>
+            <!-- the <wbr> lets the filename wrap on narrow phones instead of
+                 dictating the table's minimum width -->
+            <a href="##link_tgz##">Electrum-##VERSION##<wbr/>.tar.gz</a>
         </td>
         <td>
             <span style="font-size:80%"><a href="##sigs_tgz##">Signatures</a></span>
@@ -31,7 +33,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
     </tr>
     <tr>
         <td>
-            <img src="icons/os_linux.gif" class="os-linux"/>Linux
+            <img src="icons/linux.svg" width="32" height="32" alt=""/>Linux
         </td>
         <td>
             <a href="##link_appimage##">AppImage</a>
@@ -43,8 +45,8 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
     </tr>
     <tr>
         <td rowspan="3">
-            <img src="icons/os_windows.gif"/>Windows
-            <span style="font-size:80%">(10 (1809) and higher, x86_64))</span>
+            <img src="icons/windows.svg" width="32" height="32" alt=""/>Windows
+            <span style="font-size:80%">(10 (1809) and higher, x86_64)</span>
         </td>
         <td>
             <a href="##link_win##">Standalone Executable</a>
@@ -72,7 +74,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
     </tr>
     <tr>
         <td>
-            <img src="icons/os_apple.png"/>macOS
+            <img src="icons/apple.svg" width="32" height="32" alt=""/>macOS
             <span style="font-size:80%">(11 and higher)</span>
         </td>
         <td>
@@ -84,7 +86,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
     </tr>
     <tr>
         <td rowspan="3">
-            <img src="icons/android_icon.png" width=30/>Android
+            <img src="icons/android.svg" width="32" height="32" alt=""/>Android
             <span style="font-size:80%">
                 (8.0 and higher)<br/>
                 (available on <a href="https://play.google.com/store/apps/details?id=org.electrum.electrum">Google Play</a>)<br/>
@@ -118,10 +120,10 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
 
 
 <h3>Installation from Python sources</h3>
-<table class="downloads">
+<table class="downloads instructions">
     <tr>
         <td rowspan="5">
-            <img src="icons/os_linux.gif"/>Linux
+            <img src="icons/linux.svg" width="32" height="32" alt=""/>Linux
         </td>
         <td>
             Install dependencies:
@@ -153,7 +155,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
         </td>
         <td>
             <code>tar -xvf Electrum-##VERSION##.tar.gz</code><br/>
-            <code>python3 Electrum-##VERSION##/run_electrum</code></br>
+            <code>python3 Electrum-##VERSION##/run_electrum</code><br/>
         </td>
     </tr>
     <tr>
@@ -169,7 +171,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
 
 <h3>How to verify GPG signatures</h3>
 
-<div class="downloads" style="padding:5px">
+<div class="downloads">
     <p>
         GPG signatures are a proof that distributed files have been signed
         by the owner of the signing key. For example, if this website was
@@ -196,7 +198,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
 
 <h3>Notes for Windows users</h3>
 
-<div class="downloads" style="padding:5px">
+<div class="downloads">
     <p>
         Electrum binaries are often flagged by various anti-virus
         software. There is nothing we can do about it, so please stop
