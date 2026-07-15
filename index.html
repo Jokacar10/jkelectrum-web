@@ -1,42 +1,61 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Electrum Bitcoin Wallet</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="robots" content="index, follow"/>
-    <meta name="description" content="Electrum Bitcoin Wallet."/>
-    <meta name="x:site" content="@ElectrumWallet"/>
+    <meta name="description" content="Electrum is one of the most popular Bitcoin wallets, in continuous development since 2011. Fast, secure and open source, for Windows, macOS, Linux and Android."/>
+    <link rel="canonical" href="https://electrum.org/"/>
 
-    <link rel="icon" href="images/favicon.png" type="image/png"/>
+    <meta property="og:site_name" content="Electrum"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://electrum.org/"/>
+    <meta property="og:title" content="Electrum Bitcoin Wallet"/>
+    <meta property="og:description" content="Electrum is one of the most popular Bitcoin wallets, in continuous development since 2011. Fast, secure and open source, for Windows, macOS, Linux and Android."/>
+    <meta property="og:image" content="https://electrum.org/images/og-image.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image:alt" content="Electrum Bitcoin Wallet logo"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@ElectrumWallet"/>
+    <meta name="twitter:image" content="https://electrum.org/images/og-image.png"/>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png"/>
     <link rel="shortcut icon" href="favicon.ico"/>
-    <link rel="stylesheet" href="css/electrum.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
-    <link rel="stylesheet" href="css/sprites.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
-    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+    <link rel="stylesheet" href="css/electrum.css"/>
 
-    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
-    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-    <script type="text/javascript" src="js/jquery.cycle.lite.js"></script>
-    <script type="text/javascript" src="js/jquery.client.js"></script>
-    <script type="text/javascript" src="js/jquery.socialbutton-1.8.0.js"></script>
-    <script type="text/javascript" src="js/qrcode.js"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Electrum",
+        "url": "https://electrum.org/",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Windows, macOS, Linux, Android",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+        "license": "https://github.com/spesmilo/electrum/blob/master/LICENCE",
+        "author": {"@type": "Organization", "name": "Electrum Technologies GmbH"}
+    }
+    </script>
 </head>
 <body>
 <div id="header">
     <div class="wrapper">
         <div id="logo">
             <a href="https://electrum.org/">
-                <div id="electrum_logo"><img src="logo/electrum_logo.png" alt="Electrum" border="none" width="70"
-                                             align="top"/></div>
+                <div id="electrum_logo"><img src="logo/electrum_logo.png" alt="Electrum" width="70"/></div>
                 <div id="electrum_text"></div>
                 <span id="logo_subtitle">Bitcoin Wallet</span>
             </a>
         </div>
-        <div style="float:right">
+        <div id="header-right">
             <div id="social-icons">
-                <a href="https://github.com/spesmilo/electrum" class="icon-github"></a>
-                <a href="https://x.com/ElectrumWallet" class="icon-twitter"></a>
+                <a href="https://github.com/spesmilo/electrum"><img src="icons/github.svg" width="24" height="24" alt="Electrum on GitHub"/></a>
+                <a href="https://x.com/ElectrumWallet"><img src="icons/x.svg" width="24" height="24" alt="Electrum on X"/></a>
+                <a href="https://njump.me/nprofile1qqspqflat0pmtegvnqqdfz7g4nau9yxcnwzhcl8p24e22uzgcnq9trsprpmhxue69uhhyetvv9ujuumwdae8gtnnda3kjctvqy88wue69uhkztnwdaejumr0dsqs7amnwvaz7tmp9ehx7uewd3hkcqgdwaehxw309ahx7uewd3hkcqg6waehxw309aex2mrp0yhxwet5v9kxy7fwvdhk6tmkxyq3yamnwvaz7tm0venxx6rpd9hzuur4vgvw08lt"><img src="icons/nostr.svg" width="24" height="24" alt="Electrum on Nostr"/></a>
             </div>
             <div class="clear"></div>
             <div id="menu">
@@ -60,10 +79,15 @@
 
     </div>
 </div>
+<div id="site-notice">
+    <div class="wrapper">
+        <p>Warning: Do not download Electrum from a source other than electrum.org.
+            Verify <a href="https://docs.electrum.org/en/latest/gpg-check.html">GPG signatures</a>.</p>
+    </div>
+</div>
 <div id="content">
     <div class="wrapper">
-        <p>Warning: Do not download Electrum from a source other than electrum.org. Verify GPG signatures.
-        </p>
+        <h1 class="visually-hidden">Electrum Bitcoin Wallet</h1>
 
         <!-- "download page" starts -->
         <div class="page" id="download">
@@ -88,7 +112,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
 <table class="downloads">
     <tr>
         <td>
-            <img src="icons/tar-gz.png" width=32/>Python
+            <img src="icons/python.svg" width="32" height="32" alt=""/>Python
             <span style="font-size:80%">(3.10 and higher)</span>
         </td>
         <td>
@@ -100,7 +124,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
     </tr>
     <tr>
         <td>
-            <img src="icons/os_linux.gif" class="os-linux"/>Linux
+            <img src="icons/linux.svg" width="32" height="32" alt=""/>Linux
         </td>
         <td>
             <a href="https://download.electrum.org/4.8.0/electrum-4.8.0-x86_64.AppImage">AppImage</a>
@@ -112,8 +136,8 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
     </tr>
     <tr>
         <td rowspan="3">
-            <img src="icons/os_windows.gif"/>Windows
-            <span style="font-size:80%">(10 (1809) and higher, x86_64))</span>
+            <img src="icons/windows.svg" width="32" height="32" alt=""/>Windows
+            <span style="font-size:80%">(10 (1809) and higher, x86_64)</span>
         </td>
         <td>
             <a href="https://download.electrum.org/4.8.0/electrum-4.8.0.exe">Standalone Executable</a>
@@ -141,7 +165,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
     </tr>
     <tr>
         <td>
-            <img src="icons/os_apple.png"/>macOS
+            <img src="icons/apple.svg" width="32" height="32" alt=""/>macOS
             <span style="font-size:80%">(11 and higher)</span>
         </td>
         <td>
@@ -153,7 +177,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
     </tr>
     <tr>
         <td rowspan="3">
-            <img src="icons/android_icon.png" width=30/>Android
+            <img src="icons/android.svg" width="32" height="32" alt=""/>Android
             <span style="font-size:80%">
                 (8.0 and higher)<br/>
                 (available on <a href="https://play.google.com/store/apps/details?id=org.electrum.electrum">Google Play</a>)<br/>
@@ -190,7 +214,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
 <table class="downloads">
     <tr>
         <td rowspan="5">
-            <img src="icons/os_linux.gif"/>Linux
+            <img src="icons/linux.svg" width="32" height="32" alt=""/>Linux
         </td>
         <td>
             Install dependencies:
@@ -222,7 +246,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
         </td>
         <td>
             <code>tar -xvf Electrum-4.8.0.tar.gz</code><br/>
-            <code>python3 Electrum-4.8.0/run_electrum</code></br>
+            <code>python3 Electrum-4.8.0/run_electrum</code><br/>
         </td>
     </tr>
     <tr>
@@ -238,7 +262,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
 
 <h3>How to verify GPG signatures</h3>
 
-<div class="downloads" style="padding:5px">
+<div class="downloads">
     <p>
         GPG signatures are a proof that distributed files have been signed
         by the owner of the signing key. For example, if this website was
@@ -265,7 +289,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
 
 <h3>Notes for Windows users</h3>
 
-<div class="downloads" style="padding:5px">
+<div class="downloads">
     <p>
         Electrum binaries are often flagged by various anti-virus
         software. There is nothing we can do about it, so please stop
@@ -300,7 +324,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
             <h4>Forums and social media</h4>
             <ul>
                 <li>Official announcements are made
-                  on <a href="https://x.com/ElectrumWallet">Twitter</a>
+                  on <a href="https://x.com/ElectrumWallet">X (Twitter)</a>
                   and <a href="nostr:npub1zqnl6k7rkhjsexqq6j9u3t8mc2gd3xu9037wz4tj54cy33xq2k8qpqv2pm">nostr</a>.</li>
                 <li>You can ask questions
                 on <a href="https://bitcointalk.org/index.php?board=98.0">bitcointalk.org</a>
@@ -490,7 +514,8 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
         </div>
 
         <div class="page" id="impressum">
-            <h4>Impressum</h4> This website is hosted by
+            <h4>Impressum</h4>
+            <p>This website is hosted by
             Electrum Technologies GmbH<br/> Electrum Technologies was founded by Thomas
             Voegtlin in 2013.<br/> Its mission is to develop,
             package and distribute Electrum software, and to
@@ -622,19 +647,21 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
         <div class="col1">
             <p><a href="#impressum"
                   onclick="location.hash='#impressum'; window.scrollTo(0,0); return false;">Impressum</a></p>
-            <p><a href="#disclaimer" onclick="location.hash='#disclaimer'; window.scrollTo(0,0); return false;">Disclaimer</a>
-            <p>
+            <p><a href="#disclaimer" onclick="location.hash='#disclaimer'; window.scrollTo(0,0); return false;">Disclaimer</a></p>
+            <p><a href="#privacy" onclick="location.hash='#privacy'; window.scrollTo(0,0); return false;">Privacy Policy</a></p>
         </div>
         <div class="col2">
             <p>Released under the <a href="https://github.com/spesmilo/electrum/blob/master/LICENCE">MIT Licence</a></p>
-            <p><a href="https://github.com/spesmilo/electrum-web">Website source<a/></p>
+            <p><a href="https://github.com/spesmilo/electrum-web">Website source</a></p>
         </div>
     </div>
     <div class="clear"></div>
 </div>
 
 
-<script type="text/javascript" charset="utf-8">
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jquery.cycle.lite.js"></script>
+<script>
     $(document).ready(function(){
         $.getJSON('projects.json', function(data) {
 
@@ -651,17 +678,10 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
             '<p>', element['description'].join(''), '</p>',
             text_more,
             '</div>',
-        <!-- '<a href="', element['media'], '" rel="prettyPhoto[featured]">', -->
             '<img src="slides/', element['id'], '.png" alt="', element['title'], '"/>'
-        <!-- '</a>' -->
         ].join('');
         var item = $('<div></div>').html(html);
         $('#slides').append(item);
-        });
-
-        $("a[rel^='prettyPhoto']").prettyPhoto({
-        overlay_gallery: false,
-        deeplinking: false
         });
 
         $(".slideshow").cycle({
