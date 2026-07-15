@@ -19,7 +19,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
 <table class="downloads">
     <tr>
         <td>
-            <img src="icons/tar-gz.png" width="32" alt=""/>Python
+            <img src="icons/python.svg" width="32" height="32" alt=""/>Python
             <span style="font-size:80%">(3.10 and higher)</span>
         </td>
         <td>
@@ -31,7 +31,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
     </tr>
     <tr>
         <td>
-            <img src="icons/os_linux.gif" class="os-linux" alt=""/>Linux
+            <img src="icons/linux.svg" width="32" height="32" alt=""/>Linux
         </td>
         <td>
             <a href="##link_appimage##">AppImage</a>
@@ -43,7 +43,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
     </tr>
     <tr>
         <td rowspan="3">
-            <img src="icons/os_windows.gif" alt=""/>Windows
+            <img src="icons/windows.svg" width="32" height="32" alt=""/>Windows
             <span style="font-size:80%">(10 (1809) and higher, x86_64))</span>
         </td>
         <td>
@@ -72,7 +72,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
     </tr>
     <tr>
         <td>
-            <img src="icons/os_apple.png" alt=""/>macOS
+            <img src="icons/apple.svg" width="32" height="32" alt=""/>macOS
             <span style="font-size:80%">(11 and higher)</span>
         </td>
         <td>
@@ -84,7 +84,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
     </tr>
     <tr>
         <td rowspan="3">
-            <img src="icons/android_icon.png" width="30" alt=""/>Android
+            <img src="icons/android.svg" width="32" height="32" alt=""/>Android
             <span style="font-size:80%">
                 (8.0 and higher)<br/>
                 (available on <a href="https://play.google.com/store/apps/details?id=org.electrum.electrum">Google Play</a>)<br/>
@@ -121,7 +121,7 @@ Note: All the files can be downloaded via <a href="https://download.electrum.org
 <table class="downloads">
     <tr>
         <td rowspan="5">
-            <img src="icons/os_linux.gif" alt=""/>Linux
+            <img src="icons/linux.svg" width="32" height="32" alt=""/>Linux
         </td>
         <td>
             Install dependencies:
