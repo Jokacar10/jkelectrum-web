@@ -539,8 +539,41 @@ th, td, caption {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
     }
+    table.downloads th,
+    table.downloads td {
+        padding: 8px 10px;
+    }
     #download code {
         overflow-wrap: anywhere;
+    }
+    /* Stack the instruction rows into full-width blocks (label above
+       commands); as table columns, the wrap-anywhere code cells collapse
+       to their ~1ch min-content width, especially in Firefox. */
+    table.instructions tbody,
+    table.instructions tr,
+    table.instructions td {
+        display: block;
+    }
+    table.instructions tr {
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        padding: 10px 12px;
+    }
+    table.instructions tr:first-child {
+        border-top: 0;
+    }
+    table.instructions td {
+        border-top: 0;
+        padding: 0;
+    }
+    table.instructions td[rowspan] {
+        margin-bottom: 6px;
+    }
+    table.instructions code {
+        display: block;
+        margin: 4px 0 0;
+    }
+    table.instructions br {
+        display: none;
     }
 }
 
